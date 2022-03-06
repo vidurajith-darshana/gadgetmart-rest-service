@@ -51,7 +51,6 @@ public class OrderService {
             orderNumbers = new OrderNumbers();
             orderNumbers.setNumber(2000);
         } else {
-            orderNumbers = new OrderNumbers();
             orderNumbers.setNumber(orderNumbers.getNumber()+1);
         }
         orderNumberRepository.saveAndFlush(orderNumbers);
